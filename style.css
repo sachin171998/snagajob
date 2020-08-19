@@ -1,0 +1,362 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;1,100&display=swap');
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* font-family: 'Poppins', sans-serif; */
+}
+
+a {
+  text-decoration: none;
+}
+
+header {
+  width: 100%;
+  height: 4.80rem;
+  background-color: rgb(47, 36, 103);
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.logo {
+  width: 15%;
+  /* background-color: yellow; */
+  height: 3rem;
+  /* margin-top: 1rem;
+    margin-left: 1rem; */
+  color: white;
+  font-size: 1.30rem;
+}
+
+.searchbox {
+  width: 45%;
+  height: 3rem;
+  /* background-color: seagreen; */
+}
+
+.pinksearchbox {
+  background-color: rgb(217, 58, 136);
+  color: white;
+  position: relative;
+  padding: .60rem 1rem;
+  margin-left: 13.60rem;
+  -webkit-border-top-right-radius: 100px;
+  -webkit-border-bottom-right-radius: 100px;
+  -moz-border-radius-topright: 100px;
+  -moz-border-radius-bottomright: 100px;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+}
+
+.searchbox {
+  position: relative;
+  display: inline-block;
+  margin-left: 1.5rem;
+}
+
+.searchbox input:focus {
+  outline: none;
+  /*by default,input shows an outline on focus */
+}
+
+.searchbox input {
+  z-index: 0;
+  margin-top: 2%;
+  width: 210%;
+  height: 40px;
+  background: #f1f3f4;
+  border-radius: 25px;
+  border: 2px solid #f1f3f4;
+}
+
+form {
+  display: inline-block;
+}
+
+#closeid {
+  display: none;
+}
+
+.fa-search {
+  position: absolute;
+  top: 40%;
+  left: 5%;
+  color: #8e99a4;
+}
+
+.close {
+  position: absolute;
+  top: 50%;
+  right: -160%;
+  color: #8e99a4;
+  border: none;
+  padding: 0;
+}
+
+.search {
+  color: #8e99a4;
+  font-weight: 400;
+  padding-left: 50px;
+  font-size: 18px;
+  z-index: 3;
+}
+
+.fa-times {
+  position: absolute;
+  top: 30%;
+  right: 5%;
+}
+
+.otherlink {
+  width: 34%;
+  height: 3rem;
+  /* background-color:rosybrown; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.otherlink a {
+  color: white;
+  position: relative;
+}
+
+.postbutton {
+  padding: .44rem 1.50rem;
+  /* padding-left:.40rem ;
+    padding-right:.40rem  ; */
+  /* background-color: pink; */
+  border: 1px solid blue;
+  border-radius: 15px;
+}
+
+.dropdown {
+  position: relative;
+  /* display: inline-block; */
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  /* background-color: red; */
+  margin-top: 18rem;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropbtn {
+  color: white;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {}
+
+/* headerdownlist start */
+
+.headerdownlist {
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.headerdownlist a {
+  color: black;
+  font-size: .88rem;
+}
+
+.headerdownlist i {
+  display: inline-block;
+  padding: 1rem;
+  font-size: .50rem;
+}
+
+/* click applay section */
+
+.clickapply {
+  width: 80%;
+  height: 3.60rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: red; */
+}
+
+.clickapply a {
+  color: white;
+  background-color: rgb(214, 50, 131);
+  padding: .40rem .90rem;
+  font-size: .60rem;
+}
+
+.clickapply p {
+  color: rgb(107, 167, 98);
+  padding: .40rem;
+}
+
+/* sorter and packer section start */
+
+.sorter {
+  width: 80%;
+  height: 4rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.sorter a {
+  color: white;
+  padding: 1rem 2.40rem;
+  background-color: rgb(66, 86, 206);
+  border-radius: 20px;
+}
+
+/* magic cration section start */
+
+.magiccration {
+  width: 80%;
+  height: 13rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: red; */
+  display: flex;
+}
+
+.imgmagiccration {
+  width: 15%;
+  /* background-color: yellow; */
+}
+
+.imgmagiccration img {
+  margin-top: 1rem;
+}
+
+.magiccrationinfo {}
+
+.magiccrationinfo i {
+  display: inline-block;
+  padding: .35rem;
+}
+
+/* jobdescription section start */
+
+.jobdescription {
+  width: 80%;
+  height: 10rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: yellow; */
+}
+
+.jobdescription h2 {
+  padding: 1rem;
+}
+
+.jobdescription p {
+  padding: 1rem;
+}
+
+.jobdescription a {
+  padding: 1rem;
+  font-size: .70rem;
+}
+
+/* suggestion section start */
+
+.suggestion {
+  width: 80%;
+  height: 6rem;
+  margin-left: 10%;
+  margin-right: 10%;
+  /* background-color: yellow; */
+}
+
+.suggestion h2 {
+  padding: 1rem;
+}
+
+.suggestion a {
+  background-color: rgb(233, 233, 234);
+  padding: .20rem 1rem;
+  border-radius: 15px;
+  margin: 1rem;
+  margin-top: 2rem;
+}
+
+/* footer style start */
+
+footer {
+  width: 100%;
+  height: 25rem;
+  background-color: rgb(42, 35, 100);
+  color: white;
+}
+
+footer h2 {
+  text-align: center;
+}
+
+.footerlink {
+  width: 40%;
+  height: 20rem;
+  /* background-color: red; */
+  margin-top: 2%;
+  margin-left: 30%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.footerlink ul {
+  list-style: none;
+}
+
+.footerlink a {
+  color: white;
+  display: inline-block;
+  padding: .40rem;
+}
+
+.footerlink p {
+  font-size: 1.40rem;
+  padding: 1rem;
+}
+
+.colorfooterlink {
+  color: rgb(230, 62, 158);
+}
+
+/* footerlinkicon style start */
+
+.footerlinkicons {
+  text-align: center;
+  background-color: rgb(42, 35, 100);
+}
+
+.footerlinkicons i {
+  display: inline-block;
+  padding: 1rem;
+  color: white;
+}
+
+.footeralink a {
+  color: white;
+  display: inline-block;
+  padding: 1.60rem;
+  font-size: .70rem;
+}
